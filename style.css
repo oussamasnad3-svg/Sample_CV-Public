@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #050816;
+    --bg-card: #0b1220;
+    --accent: #2563eb;
+    --accent-soft: rgba(37, 99, 235, 0.12);
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #111827;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+    --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.6);
+    --max-width: 960px;
+    --space: 20px;
+    --space-lg: 32px;
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background: radial-gradient(circle at top, #1d2a4a 0, #020617 45%, #000 100%);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* Topbar */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(16px);
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), transparent);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 10px 16px;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    background: radial-gradient(circle at 20% 0, #60a5fa, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #f9fafb;
+    box-shadow: 0 0 18px rgba(37, 99, 235, 0.9);
+}
+
+.nav a {
+    margin-left: 14px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #e5e7eb;
+    border-color: var(--accent);
+}
+
+/* Layout */
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+/* Hero */
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr);
+    gap: 24px;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    border-radius: 24px;
+    background: radial-gradient(circle at top left, #1d4ed8 0, transparent 55%),
+                radial-gradient(circle at bottom right, #0f172a 0, #020617 70%);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+.summary {
+    font-size: 0.98rem;
+    color: #e5e7eb;
+    max-width: 620px;
+    margin-bottom: 18px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: #f9fafb;
+    border: none;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.55);
+}
+
+.btn.primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 40px rgba(37, 99, 235, 0.75);
+}
+
+.btn.ghost {
+    background: rgba(15, 23, 42, 0.7);
+    color: var(--muted);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.btn.ghost:hover {
+    background: rgba(15, 23, 42, 0.95);
+    color: #e5e7eb;
+}
+
+/* Sections */
+
+.section {
+    margin-bottom: var(--space-lg);
+}
+
+.section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* Cards */
+
+.card {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.92));
+    border-radius: var(--radius-lg);
+    padding: 16px 18px 18px;
+    border: 1px solid rgba(30, 64, 175, 0.6);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.8);
+}
+
+/* Experience */
+
+.item {
+    margin-bottom: 14px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.item h3 {
+    font-size: 1rem;
+}
+
+.item-sub {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.item ul {
+    margin-left: 16px;
+    margin-top: 4px;
+    list-style: disc;
+}
+
+.item li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #e5e7eb;
+}
+
+/* Skills */
+
+.two-col {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: var(--space);
+}
+
+.pill-title {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.pill {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    background: var(--accent-soft);
+    color: #bfdbfe;
+    border: 1px solid rgba(129, 140, 248, 0.7);
+}
+
+/* Lists */
+
+.simple-list {
+    margin-left: 16px;
+    margin-top: 4px;
+    list-style: disc;
+}
+
+.simple-list li {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #e5e7eb;
+}
+
+/* Contact */
+
+.contact-list {
+    list-style: none;
+    margin-top: 4px;
+}
+
+.contact-list li {
+    font-size: 0.92rem;
+    margin-bottom: 4px;
+}
+
+.contact-list a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 1px solid rgba(15, 23, 42, 0.9);
+    padding: 14px 16px 22px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .topbar {
+        padding: 8px 12px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        padding: 18px 14px;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 18px 12px 30px;
+    }
+}
