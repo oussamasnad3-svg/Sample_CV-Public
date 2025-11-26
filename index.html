@@ -1,102 +1,423 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Oussama Snad - Network Security Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CV</title>
     <style>
+        * { box-sizing: border-box; }
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f8f8f8;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #333;
-            margin: 5px 0;
-        }
-
-        p {
-            color: #555;
             margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            background: #0b1120;
+            color: #e5e7eb;
         }
-
-        .section {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+        .page {
+            max-width: 1080px;
+            margin: 24px auto 40px;
+            padding: 24px 18px 32px;
+            background: #020617;
+            border-radius: 16px;
+            box-shadow: 0 18px 45px rgba(15,23,42,0.8);
+            border: 1px solid rgba(55,65,81,0.7);
+        }
+        header {
+            border-bottom: 1px solid rgba(55,65,81,0.7);
+            padding-bottom: 16px;
             margin-bottom: 20px;
-            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .title {
+            margin-top: 4px;
+            color: #9ca3af;
+            font-weight: 500;
+        }
+        .contact {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #d1d5db;
+        }
+        .contact span {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .contact a:hover { text-decoration: underline; }
+
+        h2 {
+            font-size: 1.1rem;
+            margin: 18px 0 8px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9ca3af;
+        }
+        h3 {
+            font-size: 1rem;
+            margin: 10px 0 2px;
+            color: #e5e7eb;
+        }
+        h4 {
+            font-size: 0.95rem;
+            margin: 6px 0 2px;
+            color: #e5e7eb;
         }
 
-        .section h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+        p { margin: 4px 0 8px; font-size: 0.94rem; }
 
+        .job-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 6px;
+        }
+        .job-meta {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
         ul {
-            list-style-type: none;
-            padding: 0;
+            margin: 4px 0 8px 1.1rem;
+            padding-left: 0.4rem;
         }
+        li { font-size: 0.9rem; margin-bottom: 2px; }
 
-        li {
-            margin-bottom: 8px;
-            color: #555;
+        .two-col {
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+            gap: 18px;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+        .tag {
+            font-size: 0.78rem;
+            padding: 3px 8px;
+            border-radius: 999px;
+            border: 1px solid rgba(96,165,250,0.6);
+            background: rgba(37,99,235,0.08);
+            color: #bfdbfe;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+        .card-soft {
+            border-radius: 12px;
+            border: 1px solid rgba(55,65,81,0.8);
+            padding: 10px 12px;
+            background: radial-gradient(circle at top left, rgba(30,64,175,0.35), transparent 55%);
+        }
+        .level {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-left: 6px;
+        }
+        .lang-level {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+        @media (max-width: 768px) {
+            .page { margin: 12px; padding: 18px 14px 26px; }
+            h1 { font-size: 1.6rem; }
+            .two-col { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-
+<div class="page">
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
+        <h1>Oussama Snad</h1>
+        <div class="title">Network Security Engineer</div>
+        <div class="contact">
+            <span><a href="mailto:oussamasnad3@gmail.com">oussamasnad3@gmail.com</a></span>
+            <span>· 06 07 39 70 68</span>
+            <span>· hay walaa imm 04 n 13 tr 09 sect 02 sidi moumen</span><br>
+            <span><a href="https://www.linkedin.com/in/oussama-snad" target="_blank">linkedin.com/in/oussama-snad</a></span>
+        </div>
     </header>
 
-    <section class="section">
-        <h2>Contact Information</h2>
-        <ul>
-            <li>Email: your.email@example.com</li>
-            <li>Phone: (123) 456-7890</li>
-            <li>LinkedIn: linkedin.com/in/yourname</li>
-            <li>GitHub: github.com/yourusername</li>
-        </ul>
+    <section id="profil">
+        <h2>Profil</h2>
+        <p>
+            Network Security Engineer, spécialisé dans la conception, la gestion et la sécurisation d’infrastructures IT
+            multi-sites. Expertise en administration LAN/WAN, déploiement de solutions SD-Access, segmentation réseau et
+            contrôle d’accès (802.1x, NAC, ISE). Expérience solide avec les firewalls NGFW (Fortinet, Forcepoint, WatchGuard),
+            ainsi que des solutions de cybersécurité avancées : Qualys pour le vulnerability management, Wallix pour le PAM,
+            Forcepoint DLP pour la protection des données et Sophos XDR pour la détection et la réponse étendue.
+        </p>
+        <p>
+            Maîtrise des VPN site-à-site et SSL, des architectures sécurisées multi-sites, de la supervision et de la
+            virtualisation via Zabbix, PRTG, VMware et Nutanix Prism. Passionné par la cybersécurité, reconnu pour mon sens
+            du service, mon esprit d’équipe et ma capacité à piloter des projets stratégiques, je m’engage à renforcer la
+            résilience et à accompagner la transformation digitale sécurisée des organisations.
+        </p>
+        <div class="tag-list">
+            <span class="tag">LAN / WAN</span>
+            <span class="tag">Cisco SD-Access</span>
+            <span class="tag">NGFW</span>
+            <span class="tag">Zero Trust</span>
+            <span class="tag">VPN IPsec / SSL</span>
+            <span class="tag">Microsoft 365 Security</span>
+            <span class="tag">Zabbix / PRTG</span>
+            <span class="tag">Nutanix Prism</span>
+        </div>
     </section>
 
-    <section class="section">
-        <h2>Education</h2>
-        <p><strong>Degree in Web Development</strong></p>
-        <p>School/University Name, Graduation Year</p>
+    <section id="experience">
+        <h2>Expérience</h2>
+
+        <article>
+            <div class="job-header">
+                <h3>Network Security Engineer – CBI</h3>
+                <div class="job-meta">02/2025 – Présent · Casablanca, Maroc</div>
+            </div>
+
+            <h4>Expérience en Réseau</h4>
+            <ul>
+                <li>Gestion et configuration d’équipements réseau Cisco Catalyst 9300 (Edge Nodes) et Catalyst 9500 (Core/Control Plane Nodes) pour assurer connectivité, sécurité et haute disponibilité.</li>
+                <li>Déploiement et administration d’un SD-WAN FortiGate multi-sites : tunnels VPN IPsec, clustering HA actif-passif et bascule automatique des lignes Internet via SLA.</li>
+                <li>Implémentation d’une architecture Cisco SD-Access basée sur Cisco DNA Center (DNAC) et Cisco ISE :
+                    <ul>
+                        <li>Provisioning automatisé des équipements via DNAC.</li>
+                        <li>Segmentation dynamique avec Virtual Networks (VN) et Scalable Group Tags (SGT) pour une approche Zero Trust.</li>
+                        <li>Contrôle d’accès réseau basé sur l’identité (802.1X, MAB, BYOD) via Cisco ISE, réduction des configurations VLAN manuelles.</li>
+                        <li>Supervision du fabric via DNAC Assurance (analytique réseau, santé des clients et équipements).</li>
+                    </ul>
+                </li>
+                <li>Supervision avancée du trafic réseau (NetFlow, SNMP) sur routeurs Cisco ISR et switches Catalyst pour détecter anomalies et pics d’utilisation.</li>
+                <li>Gestion des infrastructures Wi-Fi (Cisco WLC 9800-L et 2500) et points d’accès, couverture radio optimisée, authentification sécurisée via ISE.</li>
+                <li>Documentation structurée, gestion des changements et tickets dans Jira, rapports de supervision.</li>
+            </ul>
+
+            <h4>Expérience en Systèmes &amp; Virtualisation</h4>
+            <ul>
+                <li>Administration des environnements Windows Server, gestion des rôles AD DS/DNS/DHCP et des serveurs applicatifs.</li>
+                <li>Gestion Active Directory hybride, synchronisation des identités avec Microsoft Entra ID (Azure AD).</li>
+                <li>Surveillance des clusters Nutanix Prism pour assurer la haute disponibilité des ressources critiques.</li>
+                <li>Documentation et suivi via Jira : procédures, changements et reporting sur l’état des infrastructures.</li>
+            </ul>
+
+            <h4>Expérience en Collaboration &amp; VoIP</h4>
+            <ul>
+                <li>Déploiement de Microsoft Teams Direct Routing et Webex Calling via SBC Cisco CUBE ISR 4331.</li>
+                <li>Configuration TLS/SIP, réécriture SDP pour gérer ICE Lite et adaptation des en-têtes SDP derrière NAT avec IP publique dédiée.</li>
+                <li>Intégration Webex Calling : configuration du CUBE pour router les appels via SIP Trunk opérateur, haute disponibilité des flux VoIP.</li>
+                <li>Gestion des dial-peers et transformation des numéros pour la normalisation E.164 (appels entrants/sortants) compatibles Teams &amp; Webex.</li>
+            </ul>
+
+            <h4>Expérience en Sécurité</h4>
+            <ul>
+                <li>Administration de pare-feux multi-vendeurs :
+                    <ul>
+                        <li>Forcepoint (position dorsale) : filtrage interne, DLP, prévention des fuites de données.</li>
+                        <li>FortiGate (position frontale) : protection périmétrique, SD-WAN, VPN IPsec multi-sites, routage sécurisé.</li>
+                    </ul>
+                </li>
+                <li>Supervision &amp; corrélation : supervision SNMP avancée via Zabbix pour tous les assets critiques.</li>
+                <li>Pilotage du projet Zero Trust Microsoft :
+                    <ul>
+                        <li>Déploiement de Microsoft Defender pour Endpoint, Identity et Office 365.</li>
+                        <li>Mise en place d’Intune pour la gestion unifiée des postes (MDM/MAM) et politiques de conformité.</li>
+                        <li>Politiques DLP et classification des données via Microsoft Purview (labels, rétention, auto-labeling, Conditional Access).</li>
+                    </ul>
+                </li>
+                <li>Durcissement et remédiation proactive : suivi des alertes SOC, application des recommandations et supervision de la conformité.</li>
+                <li>Sensibilisation des utilisateurs aux bonnes pratiques Zero Trust.</li>
+                <li>Documentation et suivi des incidents sécurité via Jira : tickets, CVE, rapports d’audit.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Administrateur Réseaux et Systèmes – DYECHEM</h3>
+                <div class="job-meta">02/2024 – 02/2025 · Casablanca, Maroc</div>
+            </div>
+
+            <h4>Expérience en réseau</h4>
+            <ul>
+                <li>Gestion et configuration de routeurs et commutateurs Cisco et HP Aruba.</li>
+                <li>Configuration et maintenance de points d’accès Wi-Fi Ruijie et Grandstream.</li>
+                <li>Configuration de réseaux LAN pour garantir la connectivité des utilisateurs.</li>
+                <li>Surveillance du trafic pour détecter anomalies et problèmes de performance.</li>
+            </ul>
+
+            <h4>Expérience en systèmes</h4>
+            <ul>
+                <li>Gestion des serveurs de fichiers, d’applications et de bases de données.</li>
+                <li>Mise en place de stratégies de sauvegarde et PRA avec Veeam Backup.</li>
+                <li>Administration d’Hyper-V pour la virtualisation.</li>
+                <li>Gestion d’Active Directory, migration de Windows Server 2008 vers 2019.</li>
+            </ul>
+
+            <h4>Expérience en sécurité</h4>
+            <ul>
+                <li>Configuration de pare-feux WatchGuard, IDS/IPS et filtrage web.</li>
+                <li>Application régulière des correctifs de sécurité et mises à jour.</li>
+                <li>Formation des utilisateurs à la sécurité selon les standards WatchGuard.</li>
+                <li>Configuration de VPN SSL WatchGuard pour les utilisateurs distants.</li>
+                <li>Configuration de VPN IPsec intra-groupe et avec les clients.</li>
+                <li>Rédaction de procédures de sécurité et supervision des incidents.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Administrateur Réseau et Systèmes – TERSEA</h3>
+                <div class="job-meta">08/2023 – 02/2024 · Casablanca, Maroc</div>
+            </div>
+
+            <h4>Mes réalisations en sécurité informatique</h4>
+            <ul>
+                <li>Installation et administration des WatchGuard Firebox M-Series et FireboxV.</li>
+                <li>Installation et administration de FortiGate VM sur OVH pour sécuriser les VM en production.</li>
+                <li>Configuration de tunnels VPN site-to-site intra-groupe et avec les clients.</li>
+                <li>Configuration de VPN SSL pour les utilisateurs du groupe (authentification AD).</li>
+                <li>Analyse du trafic via WatchGuard Dimension et application de correctifs.</li>
+            </ul>
+
+            <h4>Mes réalisations en réseau informatique</h4>
+            <ul>
+                <li>Administration de l’infrastructure réseau du groupe (switchs Cisco, Peplink load balancer).</li>
+                <li>Installation de Nagios Core pour la supervision de l’infrastructure.</li>
+                <li>Installation et administration de la plateforme Wi-Fi Ubiquiti.</li>
+                <li>Mise en place et maintenance des sauvegardes réseau, plans de reprise après sinistre.</li>
+            </ul>
+
+            <h4>Support N2 et N3</h4>
+            <ul>
+                <li>Analyse et résolution des problèmes réseau.</li>
+                <li>Assurance de la disponibilité et des performances des services.</li>
+                <li>Réponse aux incidents, génération de rapports et gestion des changements.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Technicien Helpdesk (Temps partiel) – ATOS</h3>
+                <div class="job-meta">10/2022 – 01/2023 · Casablanca, Maroc</div>
+            </div>
+            <ul>
+                <li>Résolution d’incidents via PMAD et interventions sur site.</li>
+                <li>Prise en charge, analyse et enregistrement des demandes utilisateurs via ISM.</li>
+                <li>Préparation, installation et configuration des postes de travail et périphériques.</li>
+                <li>Gestion des droits d’accès et comptes utilisateurs (AD, messagerie).</li>
+                <li>Suivi des stocks de matériel et demandes de remplacement.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Technicien Helpdesk (Temps partiel) – ATOS</h3>
+                <div class="job-meta">06/2021 – 12/2021 · Casablanca, Maroc</div>
+            </div>
+            <ul>
+                <li>Compréhension des demandes grâce à un questionnement précis et reformulation.</li>
+                <li>Prise en charge, analyse et enregistrement des incidents dans ISM.</li>
+                <li>Résolution des incidents N1 (PMAD, intervention physique si nécessaire).</li>
+                <li>Escalade vers le support N2 pour les cas complexes.</li>
+                <li>Suivi utilisateur, clôture des dossiers et amélioration des procédures (ITIL).</li>
+                <li>Mise en place d’indicateurs (SLA, taux de résolution au premier appel).</li>
+                <li>Gestion des droits d’accès et comptes utilisateurs.</li>
+            </ul>
+        </article>
     </section>
 
-    <section class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
+    <section id="formation">
+        <h2>Formation</h2>
+
+        <article>
+            <div class="job-header">
+                <h3>Ingénierie Systèmes, Réseaux et Sécurité – Licence Professionnelle</h3>
+                <div class="job-meta">American University of Professional Studies · 10/2023 – 08/2024 · Casablanca</div>
+            </div>
+            <p>Modules principaux :</p>
+            <ul>
+                <li>Systèmes : Administration Windows Server, Red Hat Linux.</li>
+                <li>Sécurité : NSE Fortinet, bonnes pratiques de sécurité réseau.</li>
+                <li>Réseau : CCNA 200-301 Cisco – configuration &amp; dépannage réseau IP.</li>
+                <li>Cloud : Microsoft Azure Administrator.</li>
+                <li>Virtualisation : VMware VCP-DCV.</li>
+                <li>Stockage &amp; sauvegarde : Veeam – stratégies de sauvegarde et réplication.</li>
+                <li>Management IT : ITIL – gestion des services informatiques.</li>
+                <li>Programmation : initiation Python pour scripts et automatisation.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Infrastructure Digitale (Réseaux et Systèmes) – Technicien Spécialisé</h3>
+                <div class="job-meta">ISTA Sidi Moumen · 10/2021 – 07/2023 · Casablanca</div>
+            </div>
+            <p>Activités et responsabilités :</p>
+            <ul>
+                <li>Membre actif du comité d’auto-discipline.</li>
+                <li>Représentant des stagiaires auprès de l’administration.</li>
+                <li>Responsable de l’équipe de maintenance et support informatique.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div class="job-header">
+                <h3>Maintenance support Informatique et Réseaux – Technicien</h3>
+                <div class="job-meta">ISTA Sidi Moumen · 09/2019 – 07/2021 · Casablanca</div>
+            </div>
+            <p>Activités et responsabilités :</p>
+            <ul>
+                <li>Membre actif du comité d’auto-discipline.</li>
+                <li>Représentant des stagiaires auprès de l’administration.</li>
+                <li>Responsable de l’équipe de maintenance et support informatique.</li>
+            </ul>
+        </article>
     </section>
 
-    <section class="section">
-        <h2>Experience</h2>
-        <p><strong>Web Developer</strong></p>
-        <p>Company Name, Start Date - End Date</p>
-        <ul>
-            <li>Developed and maintained company websites</li>
-            <li>Collaborated with cross-functional teams</li>
-        </ul>
+    <section id="competences" class="two-col">
+        <div>
+            <h2>Compétences</h2>
+            <div class="grid-2">
+                <div class="card-soft">
+                    <h4>Sens des priorités et gestion du temps <span class="level">Avancée</span></h4>
+                </div>
+                <div class="card-soft">
+                    <h4>Capacité à vulgariser des sujets techniques <span class="level">Intermédiaire</span></h4>
+                </div>
+                <div class="card-soft">
+                    <h4>Sens du service et orientation client <span class="level">Avancée</span></h4>
+                </div>
+                <div class="card-soft">
+                    <h4>Sens de l’écoute et communication claire <span class="level">Avancée</span></h4>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Langues</h2>
+            <ul>
+                <li>Arabe – <span class="lang-level">Natale</span></li>
+                <li>Français – <span class="lang-level">Courant</span></li>
+                <li>Anglais – <span class="lang-level">Intermédiaire</span></li>
+            </ul>
+
+            <h2>Certificats</h2>
+            <ul>
+                <li>CCNA: Enterprise Networking, Security, and Automation</li>
+                <li>CCNA: Switching, Routing, and Wireless Essentials</li>
+                <li>Fortinet FortiGate 7.6 Operator</li>
+                <li>Implementing and Operating Cisco Enterprise Network Core Technologies (ENCOR)</li>
+            </ul>
+        </div>
     </section>
-
-    <!-- Add more sections for projects, certifications, etc. -->
-
+</div>
 </body>
 </html>
